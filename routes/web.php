@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//สร้าง route
+
+Route::get('/about', function() {
+    echo "<h1>สวัสดีครับ</h1>";
+});
