@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +21,8 @@ Route::get('/', function () {
 
 //สร้าง route
 
-Route::get('/about', function() {
-    return view('about');
-});
+Route::get('/about', [AboutController ::class,'index']);
+
+Route::get('/admin', [AdminController ::class,'index']);
 
 
