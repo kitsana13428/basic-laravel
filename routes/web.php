@@ -20,5 +20,7 @@ Route::get('/', function () {
 //สร้าง route
 
 Route::get('/about', function() {
-    echo "<h1>สวัสดีครับ</h1>";
+    return view('about');
 });
+
+
