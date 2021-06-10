@@ -9,6 +9,7 @@ class AboutController extends Controller
     function index() {
         $city = "123 อยุธยา ประเทศไทย";
         $tel = "081 xxx xxxx";
-        return view('about', ['adress'=>$city, 'tel'=>$tel]); 
+        $email = "kitxxxx@gxxx.com";
+        return view('about', ['adress'=>$city, 'tel'=>$tel, 'email'=>$email]); 
     }
 }
