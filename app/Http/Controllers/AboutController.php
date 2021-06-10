@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class AboutController extends Controller
 {
     function index() {
-        return view('about'); 
+        $city = "123 อยุธยา ประเทศไทย";
+        $tel = "081 xxx xxxx";
+        return view('about', ['adress'=>$city, 'tel'=>$tel]); 
     }
 }

@@ -22,7 +22,6 @@ Route::get('/', function () {
 //สร้าง route
 
 Route::get('/about', [AboutController ::class,'index']);
-
-Route::get('/admin', [AdminController ::class,'index']);
+Route::get('/admin/gfdgertdfggjtrfdgdgfd', [AdminController ::class,'index']) -> name ('ad'); //ย่อพาทยาวๆ ให้เป็นคำสั้นๆ ad 
 
 
