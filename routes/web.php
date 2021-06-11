@@ -17,11 +17,11 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name ('home');
 
 //สร้าง route
 
 Route::get('/about', [AboutController ::class,'index']);
-Route::get('/admin/gfdgertdfggjtrfdgdgfd', [AdminController ::class,'index']) -> name ('ad'); //ย่อพาทยาวๆ ให้เป็นคำสั้นๆ ad 
+Route::get('/admin', [AdminController ::class,'index']) -> name ('admin')-> middleware('Check') ;//ย่อพาทยาวๆ ให้เป็นคำสั้นๆ ad 
 
 

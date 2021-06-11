@@ -10,6 +10,11 @@ class AboutController extends Controller
         $city = "123 อยุธยา ประเทศไทย";
         $tel = "081 xxx xxxx";
         $email = "kitxxxx@gxxx.com";
-        return view('about', ['adress'=>$city, 'tel'=>$tel, 'email'=>$email]); 
+        return view('about',compact('city','tel','email')); // compact ทำให้เขียนสั้นขึ้น
+        /*
+        return view('about')
+        -> with ('address',$address)
+        -> with ('tel', $tel)
+        การส่งค่าแบบ with ส่งแบบ value + key*/
     }
 }
